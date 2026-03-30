@@ -1,23 +1,26 @@
 # 📚 English-to-Hebrew Clipboard Translator
 
-סקריפט פייתון חכם שמאזין ללוח ההעתקה (Clipboard), מזהה טקסט באנגלית, מתרגם אותו לעברית ומשמיע אותו בקול.
+A smart Python-based automation tool that listens to your clipboard, detects English text, provides instant Hebrew translations, and reads them out loud.
 
-## ✨ תכונות עיקריות
-- **תרגום אוטומטי:** פשוט תעתיק טקסט (Ctrl+C / Cmd+C) והוא יתורגם מיד.
-- **זיהוי שפה:** הסקריפט יודע לזהות אם הטקסט הוא אנגלית כדי לא לתרגם סתם.
-- **הקראה קולית (TTS):** משמיע את המילה או המשפט באנגלית לשיפור ההגייה.
-- **שמירת מילים:** מילים בודדות שתרגמת נשמרות אוטומטית לקובץ `new_words.txt` ללמידה עתידית.
-- **התראות מערכת:** מציג את התרגום כהתראה ב-macOS.
+## ✨ Key Features
+- **Real-time Monitoring:** Instantly detects when you copy English text.
+- **Smart Detection:** Only processes English content to avoid unnecessary translations.
+- **Voice Synthesis (TTS):** Pronounces words/sentences using gTTS for better learning.
+- **Vocabulary Builder:** Saves single translated words to `new_words.txt` automatically.
+- **System Notifications:** Displays the translation as a macOS system notification.
 
-## 🚀 איך מפעילים?
-1. ודא שמותקן אצלך `pyperclip`, `gtts`, ו-`httpx`.
-2. הרץ את הסקריפט:
+## 🚀 Getting Started
+1. Install dependencies:
+   ```bash
+   pip install pyperclip gtts httpx
+   ```
+2. Run the script:
    ```bash
    python3 translator_script.py
    ```
-3. העתק טקסט באנגלית ותראה את הקסם קורה!
+3. Copy any English text and watch the magic happen!
 
-## 🛠 דרישות מערכת
+## 🛠 Requirements
 - Python 3.x
-- terminal-notifier (עבור התראות ב-Mac)
-- חיבור לאינטרנט (עבור Google Translate)
+- `terminal-notifier` (for macOS notifications)
+- Internet connection (for Google Translate API)
